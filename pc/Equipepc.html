@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waythes Discord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylespc.css">
+</head>
+<body>
+    <header>
+        <div class="left"><a href="acceuilpc.html"><i class="fas fa-home"></i> Waythes.fr</a></div>        <div class="right">Actuellement sur la page Equipes</div>
+    </header> 
+    <main>
+        <div class="space"></div> 
+        <div class="space"></div> 
+        <div class="space"></div> 
+        <div class="space"></div> 
+        <div class="space"></div> 
+        <div class="iframe-container">
+            <iframe id="myIframe" src="https://totogtrdbn.github.io/equipe-waythes/" width="350" height="2000" style="border: none;"></iframe>
+        </div>
+        <script>
+            setInterval(function() {
+                document.getElementById("myIframe").src += "";
+            }, 600000); // 10 minutes = 600000 ms
+        </script>
+    </main>
+
+</body>
+</html>
