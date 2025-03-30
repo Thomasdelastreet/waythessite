@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function detectAndRedirect() {
+            let userAgent = navigator.userAgent.toLowerCase();
+            let urlPC = "pc/acceuilpc.html";  // URL pour PC
+            let urliPhone = "android/acceuilandroid.html";  // URL pour iPhone
+            let urliPad = "android/acceuilandroid.html";  // URL pour iPad
+            let urlAndroid = "android/acceuilandroid.html";  // URL pour Android
+
+            if (/iphone|ipod/.test(userAgent)) {
+                window.location.href = urliPhone;
+            } else if (/ipad/.test(userAgent)) {
+                window.location.href = urliPad;
+            } else if (/android/.test(userAgent)) {
+                window.location.href = urlAndroid;
+            } else {
+                window.location.href = urlPC;
+            }
+        }
+
+        detectAndRedirect();
+    </script>
+</head>
+
+</html>
