@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #15031d;
+    background: #15031d;
     color: white;
     display: flex;
     flex-direction: column;
